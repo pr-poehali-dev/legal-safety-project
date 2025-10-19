@@ -60,9 +60,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <Icon name="Scale" className="text-accent" size={32} />
-            <span className="font-heading font-bold text-xl text-primary-foreground">Адвокатское бюро "Правовая Конструкция"</span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-body text-xs text-primary-foreground/70 tracking-wider uppercase">Адвокатское бюро</span>
+              <span className="font-heading font-bold text-xl text-primary-foreground">"Правовая Конструкция"</span>
+            </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {['О подходе', 'Услуги', 'Экспертиза', 'Отзывы', 'FAQ', 'Контакты'].map((item, i) => (
