@@ -64,7 +64,7 @@ const Index = () => {
             <Icon name="Scale" className="text-accent" size={32} />
             <div className="flex flex-col leading-tight">
               <span className="font-body text-xs text-primary-foreground/70 tracking-wider uppercase">Адвокатское бюро</span>
-              <span className="font-heading font-bold text-xl text-primary-foreground italic">"Правовая Конструкция"</span>
+              <span className="font-heading font-bold text-xl text-primary-foreground">"Правовая Конструкция"</span>
             </div>
           </div>
           <nav className="hidden md:flex items-center gap-6">
