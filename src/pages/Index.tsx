@@ -108,10 +108,10 @@ const Index = () => {
                 </Button>
               </div>
               <div className="flex items-center gap-4 pt-6">
-                <Icon name="Phone" className="text-accent" size={24} />
+                <Icon name="MessageCircle" className="text-accent" size={24} />
                 <div>
-                  <p className="text-sm text-primary-foreground/60 font-body">Позвонить адвокату</p>
-                  <p className="font-semibold text-lg">+7 (XXX) XXX-XX-XX</p>
+                  <p className="text-sm text-primary-foreground/60 font-body">Написать адвокату</p>
+                  <p className="font-semibold text-lg">+7 (914) 333-90-03</p>
                 </div>
               </div>
             </div>
@@ -400,7 +400,7 @@ const Index = () => {
               <div className="text-center space-y-2">
                 <Icon name="Phone" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Телефон</p>
-                <p className="text-sm text-primary-foreground/80 font-body">+7 (XXX) XXX-XX-XX</p>
+                <p className="text-sm text-primary-foreground/80 font-body">+7 (914) 333-90-03</p>
               </div>
               <div className="text-center space-y-2">
                 <Icon name="Clock" className="text-accent mx-auto" size={32} />
@@ -429,7 +429,7 @@ const Index = () => {
               <div className="space-y-2 text-sm text-primary-foreground/70 font-body">
                 <p>690091, Владивосток</p>
                 <p>ул. Петра Великого 2, оф. 400</p>
-                <p>+7 (XXX) XXX-XX-XX</p>
+                <p>+7 (914) 333-90-03</p>
                 <p>info@pravkonstrukcia.ru</p>
               </div>
             </div>
