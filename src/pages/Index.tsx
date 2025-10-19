@@ -487,7 +487,7 @@ const Index = () => {
       <footer className="py-12 bg-primary/95 text-primary-foreground border-t border-border">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
+            <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Scale" className="text-accent" size={32} />
                 <span className="font-heading font-bold text-xl whitespace-nowrap">"Правовая Конструкция"</span>
@@ -496,26 +496,26 @@ const Index = () => {
                 Адвокатское Бюро. Юридическое сопровождение бизнеса с 1995 года.
               </p>
             </div>
-            <div>
+            <div className="md:text-right">
               <h3 className="font-heading font-semibold mb-4">Контакты</h3>
               <div className="space-y-2 text-sm text-primary-foreground/70 font-body">
                 <p>690091, Владивосток</p>
                 <p>ул. Петра Великого 2, оф. 400</p>
                 <p>alyona8_21@mail.ru</p>
               </div>
-            </div>
-            <div>
-              <h3 className="font-heading font-semibold mb-4">Мы в соцсетях</h3>
-              <div className="flex gap-4">
-                <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
-                  <Icon name="Send" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
-                </a>
-                <a href="https://www.instagram.com/alena_yu_kozhushko" target="_blank" rel="noopener noreferrer">
-                  <Icon name="Instagram" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
-                </a>
-                <a href="https://vk.com/id647152470" target="_blank" rel="noopener noreferrer">
-                  <Icon name="MessageCircle" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
-                </a>
+              <div className="mt-6">
+                <h3 className="font-heading font-semibold mb-4">Мы в соцсетях</h3>
+                <div className="flex gap-4 md:justify-end">
+                  <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Send" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                  </a>
+                  <a href="https://www.instagram.com/alena_yu_kozhushko" target="_blank" rel="noopener noreferrer">
+                    <Icon name="Instagram" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                  </a>
+                  <a href="https://vk.com/id647152470" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
