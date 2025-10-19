@@ -39,6 +39,49 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }: { end: number; d
   return <span>{count}{suffix}</span>;
 };
 
+const ImageSlider = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [
+    'https://cdn.poehali.dev/files/56ec4ceb-62a4-4441-80cc-95af80788404.jpg',
+    'https://cdn.poehali.dev/files/a77795e7-2f17-4c7f-b00c-a8cdcad45caf.jpg',
+    'https://cdn.poehali.dev/files/9e46e5b7-f80d-4740-8f10-6d0aa11253ca.jpg',
+    'https://cdn.poehali.dev/files/b839857e-49d3-4786-a393-87145d1639a1.jpg',
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className="relative overflow-hidden rounded-2xl shadow-xl aspect-[4/5]">
+      {images.map((src, index) => (
+        <img
+          key={index}
+          src={src}
+          alt={`Владивосток ${index + 1}`}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === currentImage ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
+      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentImage(index)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              index === currentImage ? 'bg-accent w-8' : 'bg-white/50'
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
+
 const Index = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
@@ -166,11 +209,7 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <img
-                src="https://cdn.poehali.dev/files/56ec4ceb-62a4-4441-80cc-95af80788404.jpg"
-                alt="Владивосток - город возможностей"
-                className="rounded-2xl shadow-xl w-full h-auto object-cover aspect-[4/5]"
-              />
+              <ImageSlider />
             </div>
           </div>
         </div>
