@@ -111,7 +111,7 @@ const Index = () => {
                 <Icon name="MessageCircle" className="text-accent" size={24} />
                 <div>
                   <p className="text-sm text-primary-foreground/60 font-body">Написать адвокату</p>
-                  <p className="font-semibold text-lg">+7 (914) 333-90-03</p>
+                  <p className="font-semibold text-lg">t.me/AlenaKozhushko</p>
                 </div>
               </a>
             </div>
