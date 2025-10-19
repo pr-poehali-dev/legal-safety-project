@@ -78,8 +78,8 @@ const Index = () => {
               </button>
             ))}
           </nav>
-          <Button onClick={() => scrollToSection('contacts')} className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
-            Консультация
+          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+            <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">Консультация</a>
           </Button>
         </div>
       </header>
@@ -100,20 +100,20 @@ const Index = () => {
                 Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button onClick={() => scrollToSection('contacts')} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 animate-pulse">
-                  Записаться на консультацию
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 animate-pulse">
+                  <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">Записаться на консультацию</a>
                 </Button>
                 <Button onClick={() => scrollToSection('services')} variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 font-semibold">
                   Узнать стоимость
                 </Button>
               </div>
-              <div className="flex items-center gap-4 pt-6">
+              <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 pt-6 hover:opacity-80 transition-opacity">
                 <Icon name="MessageCircle" className="text-accent" size={24} />
                 <div>
                   <p className="text-sm text-primary-foreground/60 font-body">Написать адвокату</p>
                   <p className="font-semibold text-lg">+7 (914) 333-90-03</p>
                 </div>
-              </div>
+              </a>
             </div>
             <div className="relative animate-scale-in">
               <div className="absolute -inset-4 bg-accent/20 rounded-2xl blur-2xl"></div>
@@ -383,8 +383,8 @@ const Index = () => {
                     className="font-body"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg">
-                  Отправить заявку на консультацию
+                <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg">
+                  <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">Отправить заявку на консультацию</a>
                 </Button>
                 <p className="text-sm text-muted-foreground text-center font-body">
                   Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
