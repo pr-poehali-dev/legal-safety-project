@@ -164,9 +164,6 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground font-body mt-1">средние потери</p>
                 </div>
               </div>
-              <Button asChild size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
-                <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">Записаться на консультацию</a>
-              </Button>
             </div>
             <div className="relative">
               <img
@@ -265,11 +262,6 @@ const Index = () => {
                 <p className="text-primary-foreground/90 font-body">{stat.label}</p>
               </div>
             ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
-              <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">Записаться на консультацию</a>
-            </Button>
           </div>
         </div>
       </section>
