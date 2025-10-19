@@ -97,7 +97,7 @@ const Index = () => {
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков
               </h1>
               <p className="text-lg text-primary-foreground/90 font-body leading-relaxed">
-                Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн за час.
+                Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Button onClick={() => scrollToSection('contacts')} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 animate-pulse">
