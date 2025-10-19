@@ -187,10 +187,20 @@ const Index = () => {
               Вы открываете день с ясным пониманием: все договоры составлены профессионально. В случае спора вы защищены. У вас есть опытный юридический партнёр, который всегда на связи.
             </p>
             <div className="bg-card p-6 rounded-lg border border-border shadow-sm max-w-2xl mx-auto">
-              <p className="italic text-foreground/80 font-body leading-relaxed">
+              <div className="flex items-start gap-4 mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/files/ca9338e7-d03f-4c39-b2f7-97907cc08d45.png"
+                  alt="Анна Р."
+                  className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+                />
+                <div className="flex-1 text-left">
+                  <p className="font-semibold text-foreground font-body mb-1">Анна Р.</p>
+                  <p className="text-sm text-muted-foreground font-body">Владелица сети салонов красоты</p>
+                </div>
+              </div>
+              <p className="italic text-foreground/80 font-body leading-relaxed text-left">
                 "После начала сотрудничества с Аленой Юрьевной я перестала бояться юридических вопросов. Все договоры оформлены правильно. За два года ни одного конфликта. Это дало мне возможность открыть три новых точки."
               </p>
-              <p className="text-sm font-semibold mt-3 text-foreground">— Анна Р., владелица сети салонов красоты</p>
             </div>
           </div>
         </div>
