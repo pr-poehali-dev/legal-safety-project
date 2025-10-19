@@ -134,14 +134,14 @@ const Index = () => {
         </div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 animate-fade-in text-center md:text-left">
-              <div className="flex justify-center md:justify-start">
+            <div className="space-y-6 animate-fade-in text-center">
+              <div className="flex justify-center">
                 <Badge className="bg-accent/20 text-accent border-accent/30 font-body">30 лет опыта</Badge>
               </div>
-              <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl leading-tight mx-auto md:mx-0 max-w-xl">
+              <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight mx-auto">
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков
               </h1>
-              <p className="text-lg text-primary-foreground/90 font-body leading-relaxed">
+              <p className="text-lg text-primary-foreground/90 font-body leading-relaxed mx-auto max-w-2xl">
                 Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
