@@ -421,21 +421,16 @@ const Index = () => {
                 </p>
               </form>
             </Card>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-2 gap-6 mt-12">
               <div className="text-center space-y-2">
                 <Icon name="MapPin" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Адрес офиса</p>
                 <p className="text-sm text-primary-foreground/80 font-body">Владивосток, ул. Петра Великого 2, оф. 400</p>
               </div>
               <div className="text-center space-y-2">
-                <Icon name="Phone" className="text-accent mx-auto" size={32} />
-                <p className="font-semibold font-body">Телефон</p>
-                <p className="text-sm text-primary-foreground/80 font-body">+7 (914) 333-90-03</p>
-              </div>
-              <div className="text-center space-y-2">
                 <Icon name="Clock" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Режим работы</p>
-                <p className="text-sm text-primary-foreground/80 font-body">Пн-Пт: 9:00-18:00 (UTC+10)</p>
+                <p className="text-sm text-primary-foreground/80 font-body">Пн-Пт: 10:00-17:00 (UTC+10)</p>
               </div>
             </div>
           </div>
@@ -459,8 +454,7 @@ const Index = () => {
               <div className="space-y-2 text-sm text-primary-foreground/70 font-body">
                 <p>690091, Владивосток</p>
                 <p>ул. Петра Великого 2, оф. 400</p>
-                <p>+7 (914) 333-90-03</p>
-                <p>info@pravkonstrukcia.ru</p>
+                <p>alyona8_21@mail.ru</p>
               </div>
             </div>
             <div>
