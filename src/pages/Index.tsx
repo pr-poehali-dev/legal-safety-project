@@ -46,6 +46,8 @@ const ImageSlider = () => {
     'https://cdn.poehali.dev/files/a77795e7-2f17-4c7f-b00c-a8cdcad45caf.jpg',
     'https://cdn.poehali.dev/files/9e46e5b7-f80d-4740-8f10-6d0aa11253ca.jpg',
     'https://cdn.poehali.dev/files/b839857e-49d3-4786-a393-87145d1639a1.jpg',
+    'https://cdn.poehali.dev/files/ff7f1c00-7fa6-4ee9-9f0a-ed6270367e1b.jpg',
+    'https://cdn.poehali.dev/files/85b0ed8e-1114-49f0-b5b7-942822d7def8.jpg',
   ];
 
   useEffect(() => {
