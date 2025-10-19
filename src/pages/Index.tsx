@@ -459,7 +459,7 @@ const Index = () => {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Icon name="Scale" className="text-accent" size={32} />
-                <span className="font-heading font-bold text-xl">Правовая Конструкция</span>
+                <span className="font-heading font-bold text-xl">"Правовая Конструкция"</span>
               </div>
               <p className="text-sm text-primary-foreground/70 font-body">
                 Адвокатское Бюро. Юридическое сопровождение бизнеса с 1995 года.
