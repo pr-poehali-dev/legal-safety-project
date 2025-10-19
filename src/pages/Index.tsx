@@ -62,7 +62,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <Icon name="Scale" className="text-accent" size={32} />
-            <span className="font-heading font-bold text-xl text-primary-foreground">Правовая Конструкция</span>
+            <span className="font-heading font-bold text-xl text-primary-foreground">Адвокатское бюро "Правовая Конструкция"</span>
           </div>
           <nav className="hidden md:flex items-center gap-6">
             {['О подходе', 'Услуги', 'Экспертиза', 'Отзывы', 'FAQ', 'Контакты'].map((item, i) => (
