@@ -253,39 +253,50 @@ const Index = () => {
                 author: 'Сергей М.',
                 position: 'Владелец IT-компании',
                 text: 'Обратился с серьёзным корпоративным спором — партнёр пытался вывести активы компании. Алена Юрьевна быстро разобралась, собрала доказательства и помогла решить вопрос досудебно. Профессионально, быстро, по делу.',
-                result: 'Спор решён досудебно, активы защищены'
+                result: 'Спор решён досудебно, активы защищены',
+                image: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/9d22bb30-1089-402d-a855-6bb3b3432b8d.jpg'
               },
               {
                 author: 'Анна Р.',
                 position: 'Владелица сети салонов красоты',
                 text: 'После консультации с Аленой Юрьевной я поняла, как правильно оформлять договоры с мастерами, арендодателями, поставщиками. Теперь у меня нет конфликтов, и я спокойна за свой бизнес.',
-                result: 'Юридическое сопровождение бизнеса, 3 новых салона'
+                result: 'Юридическое сопровождение бизнеса, 3 новых салона',
+                image: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/f7237e51-065a-4623-a98a-b44dcf040ce8.jpg'
               },
               {
                 author: 'Дмитрий К.',
                 position: 'Предприниматель, ресторанный бизнес',
                 text: 'Столкнулся с незаконными действиями контролирующих органов — пытались закрыть ресторан. Алена Юрьевна оперативно подготовила возражения, представляла в суде. Решение в нашу пользу.',
-                result: 'Отменено предписание, ресторан продолжил работу'
+                result: 'Отменено предписание, ресторан продолжил работу',
+                image: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/7383234f-dc02-4c54-87c7-51e93709932a.jpg'
               },
               {
                 author: 'Елена Т.',
                 position: 'Фрилансер, дизайнер',
                 text: 'Заказчик отказался платить за выполненную работу. Алена Юрьевна помогла составить претензию, провела переговоры, и мы получили деньги без суда. Теперь все договоры оформляю после консультации.',
-                result: 'Получена оплата 250 000 рублей'
+                result: 'Получена оплата 250 000 рублей',
+                image: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/373c0baa-9764-437c-bd13-d3e2e73f7047.jpg'
               },
             ].map((review, i) => (
               <Card key={i} className="p-6 border-border bg-card hover:shadow-lg transition-shadow">
-                <div className="flex gap-1 mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Icon key={i} name="Star" className="text-accent fill-accent" size={20} />
-                  ))}
+                <div className="flex items-start gap-4 mb-4">
+                  <img 
+                    src={review.image} 
+                    alt={review.author}
+                    className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <div className="flex gap-1 mb-2">
+                      {[...Array(5)].map((_, i) => (
+                        <Icon key={i} name="Star" className="text-accent fill-accent" size={16} />
+                      ))}
+                    </div>
+                    <p className="font-semibold text-foreground font-body">{review.author}</p>
+                    <p className="text-sm text-muted-foreground font-body">{review.position}</p>
+                  </div>
                 </div>
                 <p className="text-foreground/80 font-body italic leading-relaxed mb-4">"{review.text}"</p>
-                <div className="border-t border-border pt-4 mt-4">
-                  <p className="font-semibold text-foreground font-body">{review.author}</p>
-                  <p className="text-sm text-muted-foreground font-body">{review.position}</p>
-                  <Badge className="mt-2 bg-accent/10 text-accent border-accent/20">{review.result}</Badge>
-                </div>
+                <Badge className="bg-accent/10 text-accent border-accent/20">{review.result}</Badge>
               </Card>
             ))}
           </div>
