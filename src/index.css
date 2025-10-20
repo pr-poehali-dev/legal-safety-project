@@ -99,42 +99,5 @@
 
   body {
     @apply bg-background text-foreground;
-    position: relative;
-    overflow-x: hidden;
-  }
-
-  body::before {
-    content: "⚖";
-    position: fixed;
-    font-size: 300px;
-    color: rgba(218, 165, 32, 0.08);
-    z-index: 0;
-    pointer-events: none;
-    left: 50%;
-    transform: translateX(-50%);
-    animation: floatUp 20s ease-in-out infinite;
-  }
-
-  @keyframes floatUp {
-    0%,
-    100% {
-      top: 100%;
-      opacity: 0;
-    }
-    10% {
-      opacity: 0.08;
-    }
-    90% {
-      opacity: 0.08;
-    }
-    100% {
-      top: -20%;
-      opacity: 0;
-    }
-  }
-
-  body > * {
-    position: relative;
-    z-index: 1;
   }
 }
