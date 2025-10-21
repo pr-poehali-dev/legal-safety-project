@@ -84,7 +84,7 @@ const Index = () => {
         </div>
       </header>
 
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground overflow-hidden">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary/80 via-primary/75 to-primary/70 text-primary-foreground overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
