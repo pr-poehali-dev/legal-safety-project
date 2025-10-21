@@ -109,13 +109,6 @@ const Index = () => {
                   Узнать стоимость
                 </Button>
               </div>
-              <div className="flex items-center gap-4 pt-6">
-                <Icon name="Phone" className="text-accent" size={24} />
-                <div>
-                  <p className="text-sm text-primary-foreground/60 font-body">Позвонить адвокату</p>
-                  <p className="font-semibold text-lg">+7 (XXX) XXX-XX-XX</p>
-                </div>
-              </div>
             </div>
             <div className="relative animate-scale-in">
               <div className="absolute -inset-4 bg-accent/20 rounded-2xl blur-2xl"></div>
