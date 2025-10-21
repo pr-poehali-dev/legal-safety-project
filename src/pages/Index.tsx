@@ -256,13 +256,17 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="services" className="py-20 bg-background">
-        <div className="container mx-auto px-4">
+      <section id="services" className="relative py-20 bg-gradient-to-br from-primary/80 via-primary/75 to-primary/70 text-primary-foreground overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-64 h-64 bg-accent rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent rounded-full blur-3xl"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-12">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground mb-4">
+            <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
               Юридические услуги для вашей жизни и бизнеса
             </h2>
-            <p className="text-lg text-muted-foreground font-body">Комплексное правовое сопровождение по всем направлениям</p>
+            <p className="text-lg text-primary-foreground/90 font-body">Комплексное правовое сопровождение по всем направлениям</p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
