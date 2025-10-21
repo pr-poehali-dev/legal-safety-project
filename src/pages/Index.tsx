@@ -312,7 +312,7 @@ const Index = () => {
               { number: 87, suffix: '%', label: 'дел решены досудебно', icon: 'Handshake' },
             ].map((stat, i) => (
               <div key={i} className="text-center space-y-3 animate-fade-in">
-                <Icon name={stat.icon} className="text-accent mx-auto" size={48} />
+                <Icon name={stat.icon} className="text-accent mx-auto icon-hover-effect" size={48} />
                 <p className="text-5xl font-bold text-accent font-heading">
                   <AnimatedCounter end={stat.number} suffix={stat.suffix} />
                 </p>
