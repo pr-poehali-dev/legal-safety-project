@@ -370,11 +370,11 @@ const Index = () => {
                 </div>
                 <p className="text-foreground/80 font-body italic leading-relaxed mb-4">"{review.text}"</p>
                 <div className="border-t border-border pt-4 mt-4">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-4">
                     <img 
                       src={review.photo} 
                       alt={review.author} 
-                      className="w-12 h-12 rounded-full object-cover border-2 border-accent/20"
+                      className="w-16 h-16 rounded-full object-cover border-2 border-accent/20"
                     />
                     <div>
                       <p className="font-semibold text-foreground font-body">{review.author}</p>
