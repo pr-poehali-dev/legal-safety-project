@@ -447,59 +447,7 @@ const Index = () => {
       <section id="contacts" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="font-heading font-bold text-3xl md:text-4xl mb-4">
-                Не откладывайте решение правовых вопросов
-              </h2>
-              <p className="text-lg text-primary-foreground/80 font-body">
-                Каждый день промедления увеличивает риски и потенциальные потери
-              </p>
-            </div>
-            <Card className="p-8 border-border bg-card">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="text-sm font-body font-semibold text-foreground mb-2 block">Ваше имя</label>
-                    <Input
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="Иван Иванов"
-                      required
-                      className="font-body"
-                    />
-                  </div>
-                  <div>
-                    <label className="text-sm font-body font-semibold text-foreground mb-2 block">Телефон</label>
-                    <Input
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      placeholder="+7 (999) 123-45-67"
-                      type="tel"
-                      required
-                      className="font-body"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label className="text-sm font-body font-semibold text-foreground mb-2 block">Опишите вашу ситуацию</label>
-                  <Textarea
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    placeholder="Расскажите о вашем юридическом вопросе..."
-                    rows={5}
-                    required
-                    className="font-body"
-                  />
-                </div>
-                <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg">
-                  Отправить заявку на консультацию
-                </Button>
-                <p className="text-sm text-muted-foreground text-center font-body">
-                  Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности
-                </p>
-              </form>
-            </Card>
-            <div className="grid md:grid-cols-3 gap-6 mt-12">
+            <div className="grid md:grid-cols-3 gap-6">
               <div className="text-center space-y-2">
                 <Icon name="MapPin" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Адрес офиса</p>
