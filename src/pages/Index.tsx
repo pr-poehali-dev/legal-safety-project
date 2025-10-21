@@ -93,7 +93,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-fade-in">
               <div className="flex justify-center md:justify-start">
-                <Badge className="bg-accent/20 text-accent border-accent/30 font-body text-2xl px-6 py-3">30 лет опыта</Badge>
+                <Badge className="bg-accent/20 text-accent border-accent/30 font-body text-2xl px-6 py-3 gold-shimmer-hover cursor-pointer transition-all">30 лет опыта</Badge>
               </div>
               <h1 className="font-heading font-bold text-4xl md:text-5xl lg:text-6xl leading-tight text-center md:text-left">
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков

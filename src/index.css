@@ -101,3 +101,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes gold-shimmer {
+  0%,
+  100% {
+    box-shadow:
+      0 0 10px rgba(255, 215, 0, 0.3),
+      0 0 20px rgba(255, 215, 0, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 20px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.4),
+      0 0 60px rgba(255, 215, 0, 0.2);
+  }
+}
+
+.gold-shimmer-hover:hover {
+  animation: gold-shimmer 2s ease-in-out infinite;
+}
