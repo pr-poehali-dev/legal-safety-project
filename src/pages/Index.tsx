@@ -122,7 +122,7 @@ const Index = () => {
               <img
                 src="https://cdn.poehali.dev/files/6ce711e5-ca30-48e0-a290-675f2eef3f19.jpg"
                 alt="Адвокат Алена Кожушко"
-                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover"
+                className="relative rounded-2xl shadow-2xl w-full h-auto object-cover gold-shimmer-hover cursor-pointer transition-all"
               />
             </div>
           </div>
