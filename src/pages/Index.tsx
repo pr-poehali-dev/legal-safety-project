@@ -494,7 +494,7 @@ const Index = () => {
                   <Icon name="Send" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
                 </a>
                 <a href="https://vk.com/id647152470" target="_blank" rel="noopener noreferrer">
-                  <Icon name="MessageCircle" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                  <Icon name="Share2" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
                 </a>
                 <a href="mailto:alyona8_21@mail.ru">
                   <Icon name="Mail" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
