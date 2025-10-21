@@ -47,7 +47,10 @@ const Index = () => {
   const images = [
     'https://cdn.poehali.dev/files/8ae59893-8371-418b-aad5-a8658ba82616.jpg',
     'https://cdn.poehali.dev/files/8a08b70b-9b18-4692-bd3e-9c36d2a7da92.jpg',
-    'https://cdn.poehali.dev/files/504cc398-802f-4176-ac27-a95a946f7c13.jpg'
+    'https://cdn.poehali.dev/files/504cc398-802f-4176-ac27-a95a946f7c13.jpg',
+    'https://cdn.poehali.dev/files/80de4137-c95b-4c2b-946e-004fdee729fb.jpg',
+    'https://cdn.poehali.dev/files/a07ea51d-5215-4da5-9dfa-a7f8c965b65b.jpg',
+    'https://cdn.poehali.dev/files/b67f6193-b3b9-4b3d-bfae-f2e2069e7d06.jpg'
   ];
 
   useEffect(() => {
