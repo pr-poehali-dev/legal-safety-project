@@ -181,7 +181,9 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground font-body mt-1">бизнеса сталкиваются с рисками</p>
                 </div>
                 <div className="bg-card p-4 rounded-lg border border-border gold-shimmer-hover cursor-pointer transition-all">
-                  <p className="text-3xl font-bold text-destructive font-heading">340 000 ₽</p>
+                  <p className="text-3xl font-bold text-destructive font-heading">
+                    <AnimatedCounter end={340000} duration={6600} suffix=" ₽" />
+                  </p>
                   <p className="text-sm text-muted-foreground font-body mt-1">средние потери</p>
                 </div>
               </div>
