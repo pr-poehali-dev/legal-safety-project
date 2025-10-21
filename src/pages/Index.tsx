@@ -448,11 +448,16 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="text-center space-y-2">
+              <a 
+                href="https://yandex.ru/maps/?text=Владивосток, ул. Петра Великого 2" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-center space-y-2 hover:opacity-80 transition-opacity cursor-pointer"
+              >
                 <Icon name="MapPin" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Адрес офиса</p>
                 <p className="text-sm text-primary-foreground/80 font-body">Владивосток, ул. Петра Великого 2, оф. 400</p>
-              </div>
+              </a>
               <div className="text-center space-y-2">
                 <Icon name="Clock" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Режим работы</p>
