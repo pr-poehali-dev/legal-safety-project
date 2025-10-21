@@ -45,9 +45,10 @@ const Index = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    window.open('https://t.me/AlenaKozhushko', '_blank', 'noopener,noreferrer');
     toast({
-      title: 'Заявка отправлена!',
-      description: 'Алена Юрьевна свяжется с вами в ближайшее время.',
+      title: 'Переход в Telegram!',
+      description: 'Напишите Алене Юрьевне для записи на консультацию.',
     });
     setFormData({ name: '', phone: '', message: '' });
   };
@@ -78,8 +79,10 @@ const Index = () => {
               </button>
             ))}
           </nav>
-          <Button onClick={() => scrollToSection('contacts')} className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
-            Консультация
+          <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold">
+            <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+              Консультация
+            </a>
           </Button>
         </div>
       </header>
@@ -104,8 +107,10 @@ const Index = () => {
                 Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн за час.
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <Button onClick={() => scrollToSection('contacts')} size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 animate-pulse">
-                  Записаться на консультацию
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 animate-pulse">
+                  <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                    Записаться на консультацию
+                  </a>
                 </Button>
                 <Button onClick={() => scrollToSection('services')} variant="outline" size="lg" className="border-accent text-accent hover:bg-accent/10 font-semibold">
                   Узнать стоимость
