@@ -158,11 +158,20 @@ const Index = () => {
                 Неправильно составленные договоры. Споры с партнёрами, которые тянутся месяцами. Претензии от контролирующих органов. Незнание своих прав в критический момент — всё это реальность для предпринимателей без юридического сопровождения.
               </p>
               <div className="bg-card p-6 rounded-lg border border-border shadow-sm">
-                <p className="text-sm text-muted-foreground font-body mb-2">Пример из практики:</p>
-                <p className="italic text-foreground/80 font-body leading-relaxed">
-                  "Подписала договор с поставщиком, не проверив все пункты. Через два месяца поставщик исчез с предоплатой. Потеряла 300 тысяч рублей и три месяца на судебные разбирательства."
-                </p>
-                <p className="text-sm font-semibold mt-3 text-foreground">— Елена К., владелица интернет-магазина</p>
+                <p className="text-sm text-muted-foreground font-body mb-4">Пример из практики:</p>
+                <div className="flex gap-4 items-start">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/a3dc8d86-45a6-47f0-9c7a-15ca406d8b08.jpg"
+                    alt="Елена К."
+                    className="w-16 h-16 rounded-full object-cover flex-shrink-0"
+                  />
+                  <div className="flex-1">
+                    <p className="italic text-foreground/80 font-body leading-relaxed">
+                      "Подписала договор с поставщиком, не проверив все пункты. Через два месяца поставщик исчез с предоплатой. Потеряла 300 тысяч рублей и три месяца на судебные разбирательства."
+                    </p>
+                    <p className="text-sm font-semibold mt-3 text-foreground">— Елена К., владелица интернет-магазина</p>
+                  </div>
+                </div>
               </div>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="bg-card p-4 rounded-lg border border-border">
