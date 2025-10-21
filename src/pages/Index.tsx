@@ -452,9 +452,9 @@ const Index = () => {
                 href="https://yandex.ru/maps/?text=Владивосток, ул. Петра Великого 2" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="text-center space-y-2 hover:opacity-80 transition-opacity cursor-pointer"
+                className="text-center space-y-2 cursor-pointer transition-all duration-300 hover:scale-105 hover:bg-primary-foreground/5 p-4 rounded-lg"
               >
-                <Icon name="MapPin" className="text-accent mx-auto" size={32} />
+                <Icon name="MapPin" className="text-accent mx-auto transition-transform hover:scale-110" size={32} />
                 <p className="font-semibold font-body">Адрес офиса</p>
                 <p className="text-sm text-primary-foreground/80 font-body">Владивосток, ул. Петра Великого 2, оф. 400</p>
               </a>
