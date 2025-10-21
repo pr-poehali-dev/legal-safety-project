@@ -120,3 +120,17 @@
 .gold-shimmer-hover:hover {
   animation: gold-shimmer 2s ease-in-out infinite;
 }
+
+@keyframes red-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+}
+
+.red-pulse {
+  animation: red-pulse 2s ease-in-out infinite;
+}

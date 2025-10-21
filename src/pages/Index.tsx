@@ -150,7 +150,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              <Badge className="bg-destructive/10 text-destructive border-destructive/20">Проблема</Badge>
+              <Badge className="bg-destructive/10 text-destructive border-destructive/20 red-pulse">Проблема</Badge>
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground">
                 Правовые риски угрожают стабильности вашего бизнеса
               </h2>
