@@ -337,25 +337,29 @@ const Index = () => {
                 author: 'Сергей М.',
                 position: 'Владелец IT-компании',
                 text: 'Обратился с серьёзным корпоративным спором — партнёр пытался вывести активы компании. Алена Юрьевна быстро разобралась, собрала доказательства и помогла решить вопрос досудебно. Профессионально, быстро, по делу.',
-                result: 'Спор решён досудебно, активы защищены'
+                result: 'Спор решён досудебно, активы защищены',
+                photo: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/aed396e3-fffa-4a1e-bdc5-16119026016a.jpg'
               },
               {
                 author: 'Анна Р.',
                 position: 'Владелица сети салонов красоты',
                 text: 'После консультации с Аленой я поняла, как правильно оформлять договоры с мастерами, арендодателями, поставщиками. Теперь у меня нет конфликтов, и я спокойна за свой бизнес.',
-                result: 'Юридическое сопровождение бизнеса, 3 новых салона'
+                result: 'Юридическое сопровождение бизнеса, 3 новых салона',
+                photo: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/2a0bb980-bdc7-418f-b3ea-f6d76ed4489a.jpg'
               },
               {
                 author: 'Дмитрий К.',
                 position: 'Предприниматель, ресторанный бизнес',
                 text: 'Столкнулся с незаконными действиями контролирующих органов — пытались закрыть ресторан. Алена Юрьевна оперативно подготовила возражения, представляла в суде. Решение в нашу пользу.',
-                result: 'Отменено предписание, ресторан продолжил работу'
+                result: 'Отменено предписание, ресторан продолжил работу',
+                photo: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/0842db4b-d7d2-43bd-a613-1243e5d8ed98.jpg'
               },
               {
                 author: 'Елена Т.',
                 position: 'Фрилансер, дизайнер',
                 text: 'Заказчик отказался платить за выполненную работу. Алена Юрьевна помогла составить претензию, провела переговоры, и мы получили деньги без суда. Теперь все договоры оформляю после консультации.',
-                result: 'Получена оплата 250 000 рублей'
+                result: 'Получена оплата 250 000 рублей',
+                photo: 'https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/54505f11-dd1b-485a-8a72-6f11242334d9.jpg'
               },
             ].map((review, i) => (
               <Card key={i} className="p-6 border-border bg-card hover:shadow-lg transition-shadow">
@@ -366,9 +370,18 @@ const Index = () => {
                 </div>
                 <p className="text-foreground/80 font-body italic leading-relaxed mb-4">"{review.text}"</p>
                 <div className="border-t border-border pt-4 mt-4">
-                  <p className="font-semibold text-foreground font-body">{review.author}</p>
-                  <p className="text-sm text-muted-foreground font-body">{review.position}</p>
-                  <Badge className="mt-2 bg-accent/10 text-accent border-accent/20">{review.result}</Badge>
+                  <div className="flex items-center gap-3">
+                    <img 
+                      src={review.photo} 
+                      alt={review.author} 
+                      className="w-12 h-12 rounded-full object-cover border-2 border-accent/20"
+                    />
+                    <div>
+                      <p className="font-semibold text-foreground font-body">{review.author}</p>
+                      <p className="text-sm text-muted-foreground font-body">{review.position}</p>
+                    </div>
+                  </div>
+                  <Badge className="mt-3 bg-accent/10 text-accent border-accent/20">{review.result}</Badge>
                 </div>
               </Card>
             ))}
