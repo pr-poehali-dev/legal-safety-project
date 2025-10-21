@@ -232,7 +232,7 @@ const Index = () => {
       <section className="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-6">
-            <Badge className="bg-accent/10 text-accent border-accent/20">Решение</Badge>
+            <Badge className="bg-accent/10 text-accent border-accent/20 green-pulse">Решение</Badge>
             <h2 className="font-heading font-bold text-3xl md:text-4xl text-foreground">
               Представьте: ваш бизнес под надёжной правовой защитой
             </h2>
