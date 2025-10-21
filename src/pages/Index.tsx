@@ -284,9 +284,11 @@ const Index = () => {
             <Button 
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+              asChild
             >
-              Записаться на консультацию
+              <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                Записаться на консультацию
+              </a>
             </Button>
           </div>
         </div>
