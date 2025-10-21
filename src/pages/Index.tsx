@@ -277,7 +277,7 @@ const Index = () => {
               { icon: 'Home', title: 'Недвижимость', desc: 'Юридическое сопровождение сделок с недвижимостью. Проверка чистоты сделок, оформление документов.' },
               { icon: 'Gavel', title: 'Судебное представительство', desc: 'Профессиональная защита интересов в судах любой инстанции. Подготовка документов, участие в заседаниях.' },
             ].map((service, i) => (
-              <Card key={i} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border bg-card">
+              <Card key={i} className="p-6 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-border" style={{ backgroundColor: '#f5f0e8' }}>
                 <Icon name={service.icon} className="text-accent mb-4 icon-hover-effect" size={48} />
                 <h3 className="font-heading font-semibold text-xl text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground font-body leading-relaxed">{service.desc}</p>
