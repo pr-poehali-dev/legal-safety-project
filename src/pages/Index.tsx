@@ -430,6 +430,17 @@ const Index = () => {
               </AccordionItem>
             ))}
           </Accordion>
+          <div className="text-center mt-12">
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-6 text-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              asChild
+            >
+              <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                Записаться на консультацию
+              </a>
+            </Button>
+          </div>
         </div>
       </section>
 
