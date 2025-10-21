@@ -96,7 +96,9 @@ const Index = () => {
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков
               </h1>
               <div className="flex justify-center">
-                <Badge className="bg-accent/20 text-accent border-accent/30 font-body text-3xl px-8 py-4 gold-shimmer-hover cursor-pointer transition-all">30 лет опыта</Badge>
+                <Badge className="bg-accent/20 text-accent border-accent/30 font-body text-3xl px-8 py-4 gold-shimmer-hover cursor-pointer transition-all">
+                  <AnimatedCounter end={30} duration={3000} suffix=" лет опыта" />
+                </Badge>
               </div>
               <p className="text-lg text-primary-foreground/90 font-body leading-relaxed">
                 Адвокат <span className="font-semibold text-accent">Алена Юрьевна Кожушко</span>. Защита интересов предпринимателей, фрилансеров и владельцев бизнеса. Личная встреча или онлайн за час.
