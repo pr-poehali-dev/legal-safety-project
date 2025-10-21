@@ -42,6 +42,20 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = '' }: { end: number; d
 const Index = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({ name: '', phone: '', message: '' });
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const images = [
+    'https://cdn.poehali.dev/files/8ae59893-8371-418b-aad5-a8658ba82616.jpg',
+    'https://cdn.poehali.dev/files/8a08b70b-9b18-4692-bd3e-9c36d2a7da92.jpg',
+    'https://cdn.poehali.dev/files/504cc398-802f-4176-ac27-a95a946f7c13.jpg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -158,12 +172,35 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="relative">
-              <img
-                src="https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/55686357-fd60-4651-b8eb-a778e3ec29cb.jpg"
-                alt="Защита бизнеса"
-                className="rounded-2xl shadow-xl w-full h-auto"
-              />
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <div className="relative h-[500px]">
+                {images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Владивосток ${index + 1}`}
+                    className={`absolute inset-0 w-full h-full object-cover transition-all duration-1000 ease-in-out ${
+                      index === currentImageIndex 
+                        ? 'opacity-100 translate-x-0' 
+                        : index < currentImageIndex 
+                          ? 'opacity-0 -translate-x-full' 
+                          : 'opacity-0 translate-x-full'
+                    }`}
+                  />
+                ))}
+              </div>
+              <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+                {images.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-2 h-2 rounded-full transition-all ${
+                      index === currentImageIndex ? 'bg-accent w-8' : 'bg-white/50'
+                    }`}
+                    aria-label={`Перейти к изображению ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           </div>
         </div>
