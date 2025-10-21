@@ -243,7 +243,14 @@ const Index = () => {
               <p className="italic text-foreground/80 font-body leading-relaxed">
                 "После начала сотрудничества с Аленой Юрьевной я перестала бояться юридических вопросов. Все договоры оформлены правильно. За два года ни одного конфликта. Это дало мне возможность открыть три новых точки."
               </p>
-              <p className="text-sm font-semibold mt-3 text-foreground">— Анна Р., владелица сети салонов красоты</p>
+              <div className="flex items-center gap-3 mt-4">
+                <img 
+                  src="https://cdn.poehali.dev/projects/fd6b7b8a-e698-416b-a0ce-c6273f53e3e5/files/2a0bb980-bdc7-418f-b3ea-f6d76ed4489a.jpg" 
+                  alt="Анна Р." 
+                  className="w-12 h-12 rounded-full object-cover border-2 border-accent/20"
+                />
+                <p className="text-sm font-semibold text-foreground">— Анна Р., владелица сети салонов красоты</p>
+              </div>
             </div>
           </div>
         </div>
