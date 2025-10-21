@@ -485,9 +485,12 @@ const Index = () => {
             <div>
               <h3 className="font-heading font-semibold mb-4">Мы в соцсетях</h3>
               <div className="flex gap-4">
-                <Icon name="MessageCircle" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
-                <Icon name="Send" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
-                <Icon name="Mail" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Send" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                </a>
+                <a href="https://vk.com/id647152470" target="_blank" rel="noopener noreferrer">
+                  <Icon name="MessageCircle" className="text-accent hover:scale-110 transition-transform cursor-pointer" size={28} />
+                </a>
               </div>
             </div>
           </div>
