@@ -480,8 +480,6 @@ const Index = () => {
               <div className="space-y-2 text-sm text-primary-foreground/70 font-body">
                 <p>690091, Владивосток</p>
                 <p>ул. Петра Великого 2, оф. 400</p>
-                <p>+7 (XXX) XXX-XX-XX</p>
-                <p>info@pravkonstrukcia.ru</p>
               </div>
             </div>
             <div>
