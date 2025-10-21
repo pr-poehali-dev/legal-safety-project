@@ -116,8 +116,8 @@ const Index = () => {
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков
               </h1>
               <div className="flex justify-center">
-                <Badge className="bg-[#3d2817] text-accent border-accent/50 font-body text-3xl px-8 py-4 gold-shimmer-hover cursor-pointer transition-all shadow-lg">
-                  <AnimatedCounter end={30} duration={3000} suffix=" лет опыта" />
+                <Badge className="bg-[#3d2817] text-accent border-accent/50 font-body text-3xl px-8 py-4 gold-shimmer-hover cursor-pointer transition-all shadow-lg animate-pulse">
+                  30 лет опыта
                 </Badge>
               </div>
               <p className="text-lg text-primary-foreground/90 font-body leading-relaxed">
