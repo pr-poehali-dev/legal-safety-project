@@ -187,11 +187,13 @@ const Index = () => {
                   <p className="text-sm text-muted-foreground font-body mt-1">средние потери</p>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 w-full md:w-auto">
-                <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
-                  Записаться на консультацию
-                </a>
-              </Button>
+              <div className="flex justify-end pt-4">
+                <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-lg px-8 w-full md:w-auto">
+                  <a href="https://t.me/AlenaKozhushko" target="_blank" rel="noopener noreferrer">
+                    Записаться на консультацию
+                  </a>
+                </Button>
+              </div>
             </div>
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <div className="relative h-[500px]">
