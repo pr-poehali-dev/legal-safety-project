@@ -116,7 +116,7 @@ const Index = () => {
                 Юридическая безопасность для вашей жизни и бизнеса без лишних рисков
               </h1>
               <div className="flex justify-center">
-                <Badge className="bg-[#3d2817] text-accent border-accent/50 font-body text-3xl px-8 py-4 gold-shimmer-hover cursor-pointer transition-all shadow-lg animate-pulse">
+                <Badge className="bg-[#3d2817] text-accent border-accent/50 font-body text-3xl px-8 py-4 cursor-pointer transition-all shadow-lg red-glow-pulse">
                   30 лет опыта
                 </Badge>
               </div>

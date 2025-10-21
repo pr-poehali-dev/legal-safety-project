@@ -134,3 +134,22 @@
 .red-pulse {
   animation: red-pulse 2s ease-in-out infinite;
 }
+
+@keyframes red-glow-pulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 20px rgba(239, 68, 68, 0.3),
+      0 0 40px rgba(239, 68, 68, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 0 30px rgba(239, 68, 68, 0.5),
+      0 0 60px rgba(239, 68, 68, 0.3),
+      0 0 80px rgba(239, 68, 68, 0.2);
+  }
+}
+
+.red-glow-pulse {
+  animation: red-glow-pulse 2s ease-in-out infinite;
+}
