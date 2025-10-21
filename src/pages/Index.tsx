@@ -447,16 +447,11 @@ const Index = () => {
       <section id="contacts" className="py-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90 text-primary-foreground">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
               <div className="text-center space-y-2">
                 <Icon name="MapPin" className="text-accent mx-auto" size={32} />
                 <p className="font-semibold font-body">Адрес офиса</p>
                 <p className="text-sm text-primary-foreground/80 font-body">Владивосток, ул. Петра Великого 2, оф. 400</p>
-              </div>
-              <div className="text-center space-y-2">
-                <Icon name="Phone" className="text-accent mx-auto" size={32} />
-                <p className="font-semibold font-body">Телефон</p>
-                <p className="text-sm text-primary-foreground/80 font-body">+7 (XXX) XXX-XX-XX</p>
               </div>
               <div className="text-center space-y-2">
                 <Icon name="Clock" className="text-accent mx-auto" size={32} />
