@@ -175,7 +175,9 @@ const Index = () => {
               </div>
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <div className="bg-card p-4 rounded-lg border border-border">
-                  <p className="text-3xl font-bold text-destructive font-heading">87%</p>
+                  <p className="text-3xl font-bold text-destructive font-heading">
+                    <AnimatedCounter end={87} duration={3300} suffix="%" />
+                  </p>
                   <p className="text-sm text-muted-foreground font-body mt-1">бизнеса сталкиваются с рисками</p>
                 </div>
                 <div className="bg-card p-4 rounded-lg border border-border">
